@@ -1,4 +1,77 @@
-const defaultDataset = {
+export interface IDataset {
+  init: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  job_offer: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  website: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  webapp: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  automation_tool: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  other_jobs: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  consultant: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  community: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  community_activity: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+  dating: {
+    answers: {
+      content: string;
+      nextId: string;
+    }[];
+    question: string;
+  };
+};
+
+const defaultDataset: IDataset = {
   "init": {
     answers: [
       { content: "仕事を依頼したい", nextId: "job_offer" },
@@ -78,4 +151,4 @@ const defaultDataset = {
   },
 }
 
-export default defaultDataset
+export default defaultDataset;
