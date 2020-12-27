@@ -1,94 +1,21 @@
-export interface IDataset {
-  init: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  job_offer: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  website: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  webapp: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  automation_tool: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  other_jobs: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  consultant: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  community: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  community_activity: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-  dating: {
-    answers: {
-      content: string;
-      nextId: string;
-    }[];
-    question: string;
-  };
-};
-
-const defaultDataset: IDataset = {
+const defaultDataset = {
   "init": {
     answers: [
-      { content: "仕事を依頼したい", nextId: "job_offer" },
+      { content: "작업의뢰", nextId: "job_offer" },
       { content: "エンジニアのキャリアについて相談したい", nextId: "consultant" },
       { content: "学習コミュニティについて知りたい", nextId: "community" },
       { content: "お付き合いしたい", nextId: "dating" },
     ],
-    question: "こんにちは！🐯トラハックへのご用件はなんでしょうか？",
+    question: "안녕하세요 원하시는 버튼을 눌러주세요",
   },
   "job_offer": {
     answers: [
-      { content: "Webサイトを制作してほしい", nextId: "website" },
+      { content: "Web제작", nextId: "website" },
       { content: "Webアプリを開発してほしい", nextId: "webapp" },
       { content: "自動化ツールを作ってほしい", nextId: "automation_tool" },
       { content: "その他", nextId: "other_jobs" }
     ],
-    question: "どのようなお仕事でしょうか？",
+    question: "원하시는 의뢰를 눌러주세요",
   },
   "website": {
     answers: [
@@ -151,4 +78,4 @@ const defaultDataset: IDataset = {
   },
 }
 
-export default defaultDataset;
+export default defaultDataset
