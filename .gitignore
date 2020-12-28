@@ -30,7 +30,7 @@ yarn-error.log*
 .firebaserc
 .firebase
 firestore.rules
-src/webhookConfig.js
+src/webhook-config.js
 src/firebase/config.js
 src_class/firebase/config.js
 
