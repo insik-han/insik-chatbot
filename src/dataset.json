@@ -1,0 +1,79 @@
+{
+  "init": {
+    "answers": [
+      { "content": "작업의뢰", "nextId": "job_offer" },
+      { "content": "상담", "nextId": "consultant" },
+      { "content": "아이콘에 나오는 강아지의 이름", "nextId": "bori" },
+      { "content": "다짜고짜 문의하기", "nextId": "contact" }
+    ],
+    "question": "안녕하세요 원하시는 버튼을 눌러주세요"
+  },
+  "job_offer": {
+    "answers": [
+      { "content": "Web 개발", "nextId": "website" },
+      { "content": "Web앱 개발", "nextId": "webapp" },
+      { "content": "그 외", "nextId": "other_jobs" }
+    ],
+    "question": "원하시는 의뢰를 눌러주세요"
+  },
+  "website": {
+    "answers": [
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "Web 개발 못하겠어요"
+  },
+  "webapp": {
+    "answers": [
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "Web앱 개발 못하겠어요"
+  },
+  "other_jobs": {
+    "answers": [
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "그 외에 대해서는 문의로 받겠습니다"
+  },
+  "consultant": {
+    "answers": [
+      { "content": "인생이 재미가 없어요", "nextId": "recommend1" },
+      { "content": "인생이 너무 힘들어요", "nextId": "recommend2" },
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "상담 받아요"
+  },
+  "recommend1": {
+    "answers": [
+      { "content": "바로 보러가기", "nextId": "https://youtu.be/iSw5EJUI4Fw" },
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "사쿠란보라도 보세요"
+  },
+  "recommend2": {
+    "answers": [
+      {
+        "content": "바로 들으러가기",
+        "nextId": "https://youtu.be/5qap5aO4i9A"
+      },
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "음악이라도 들으세요"
+  },
+  "bori": {
+    "answers": [
+      {
+        "content": "인스타에서 보리보리 보리보기",
+        "nextId": "https://www.instagram.com/bori._.kim/"
+      },
+      { "content": "문의하기", "nextId": "contact" },
+      { "content": "처음으로 돌아가기", "nextId": "init" }
+    ],
+    "question": "보리입니다"
+  }
+}

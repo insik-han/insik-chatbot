@@ -8,6 +8,8 @@ const AnswersList = (props) => {
         <Answer
           key={index.toString()}
           content={value.content}
+          nextId={value.nextId}
+          select={props.select}
         />
       ))}
     </div>
