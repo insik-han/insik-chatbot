@@ -66,6 +66,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log(db.collection('questions'));
     (async () => {
       const dataset = this.state.dataset;
       await db.collection('questions').get().then(snapshots => {

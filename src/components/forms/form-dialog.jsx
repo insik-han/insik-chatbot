@@ -1,7 +1,7 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@material-ui/core';
 import React, { useState } from 'react';
 import { TextInput } from '.';
-import { WEBHOOK_URL } from '../../webhook-config'
+import WEBHOOK_URL from '../../webhook-config'
 
 const FormDialog = (props) => {
   const initialState = {
@@ -55,7 +55,6 @@ const FormDialog = (props) => {
           + '이메일: ' + email + '\n'
           + '【문의내용】\n' + description
       }
-
 
       fetch(WEBHOOK_URL, {
         method: 'POST',
