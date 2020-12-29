@@ -2,7 +2,7 @@
 
 The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
 
-## 01. Name
+## 01. Link
 
 [insik-chatbot](https://insik-chatbot.web.app/)
 
